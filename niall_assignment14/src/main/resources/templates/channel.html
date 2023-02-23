@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+  <head>
+    <link rel="stylesheet" href="/css/channel.css" />
+    <title th:text="${channel.channelName}"></title>
+  </head>
+  <body>
+    <h1 th:text="|Welcome to ${channel.channelName}!|"></h1>
+    <input
+      id="channelId"
+      th:attr="data-id=${channel.channelId}"
+      type="hidden"
+    />
+
+    <div id="posted-messages"></div>
+    <div>
+      <textarea
+        id="chat-input"
+        rows="3"
+        cols="100"
+        placeholder=" Type your message here and press 'Enter' to post..."
+        autofocus
+        required
+      ></textarea>
+    </div>
+    <script type="text/javascript" src="/js/channel.js"></script>
+  </body>
+</html>

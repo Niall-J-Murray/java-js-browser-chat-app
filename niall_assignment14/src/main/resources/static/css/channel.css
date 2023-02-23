@@ -1,0 +1,12 @@
+#posted-messages {
+	border: 5px solid black;
+}
+
+#timestamp {
+	font-weight: lighter;
+	font-size: xx-small;
+}
+
+#username {
+	font-weight: bolder;
+}
